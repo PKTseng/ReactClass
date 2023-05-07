@@ -1,7 +1,20 @@
-const flag = true;
+import "./index.css"
 
-function App() {
-  return <div className="App">{flag && <span>邏輯運算觸發</span>}</div>;
+const styleStatus = true
+const style = {
+  color: "red",
+  fontSize: "50px",
 }
 
-export default App;
+function App() {
+  return (
+    <>
+      <div className="App">
+        <p style={style}>邏輯運算觸發</p>
+        <p className={styleStatus ? "active" : ""}>測試樣式</p>
+      </div>
+    </>
+  )
+}
+
+export default App
